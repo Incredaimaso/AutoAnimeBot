@@ -12,6 +12,7 @@ commands:
     - "nano inxi"
   start:
     - "python3 bot.py"
+    - "bash pkg.sh"
 
 env:
   - "ENVIRONMENT=production"
