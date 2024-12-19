@@ -1,18 +1,17 @@
 user:
-  name: incredaimaso
+  name: cevilion 
   github: incredaimaso
 
 language: "python"
-python_version: "3.12"
 
 commands:
   build:
-    - "pip install -r requirements.txt"
+    - "pip3 install -r requirements.txt"
   package:
     - "nano inxi"
+    - "apt-get -qq install ffmpeg"
   start:
-    - "python3 bot.py"
-    - "bash pkg.sh"
+    - "python3 -m bot"
 
 env:
   - "ENVIRONMENT=production"
