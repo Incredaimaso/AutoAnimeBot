@@ -11,7 +11,7 @@ commands:
     - "nano inxi"
     - "apt-get -qq install ffmpeg"
   start:
-    - "python3 -m bot"
+    - "python3 bot.py"
 
 env:
   - "ENVIRONMENT=production"
